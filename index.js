@@ -59,7 +59,7 @@ const questions = () => {
         {   // provide what the user can contribute
             type: 'input',
             name: 'contributors',
-            message: 'What does the user need to know about contributing to the repo'
+            message: 'What does the user need to know about contributing to the repo.'
         },
         {   // what test should be ran
             type: 'input',
@@ -112,10 +112,33 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeFile = data => {
+    fs.writeFile('README.md', data, err => {
+        //if there is an error
+        if (err) {
+            console.log(err);
+            return;
+        // when the README has been created    
+        } else {
+            console.log('Your README has been successfully created!')
+        }
+    })
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+
 
 // Function call to initialize app
-init();
+questions()
+// getting user answers
+.then(answers => {
+    return generatePage(answers);
+})
+// using data to display on page
+.then(data => {
+    return writeFile(data);
+})
+// catching errors
+.catch(err => {
+    console.log(err)
+})
