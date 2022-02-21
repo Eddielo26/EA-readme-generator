@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt ([
@@ -67,10 +67,49 @@ const questions = () => {
             message: 'What command should be ran to run test?',
             default: 'npm test'
         },
+        {   // provide a license 
+            type: 'list',
+            message: 'What kind of license should your project have? (Required)',
+            choices: ['MIT', 'GNU', 'ISC'],
+            validate: licenseInfo => {
+                if (licenseInfo) {
+                    return true;
+                } else {
+                    console.log('Please choose a license!');
+                    return false;
+                }
+            }
+        },
+        {   // provide github username
+            type: 'input',
+            name: 'github',
+            message: 'Enter your Github username (Required)',
+            validate: gitUserInput => {
+                if (gitUserInput) {
+                    return true;
+                } else {
+                    console.log('Please enter Github Username!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter email address (Required)',
+            validate: userEmail => {
+                if (userEmail) {
+                    return true;
+                } else {
+                    console.log('Please enter users email!');
+                    return false;
+                }
+            }
+        }
 
 
-    ])
-}
+    ]);
+};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
