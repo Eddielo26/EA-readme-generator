@@ -1,6 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+// link to page of README is generated
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt ([
@@ -19,7 +23,7 @@ const questions = () => {
         },
         {   // provide project description
             type: 'input',
-            name: 'desciption',
+            name: 'description',
             message: 'Please provide a description of your Project (Required)',
             validate: projectInfo => {
                 if (projectInfo){
@@ -93,7 +97,7 @@ const questions = () => {
                 }
             }
         },
-        {
+        {   // provide user email for contact informartion
             type: 'input',
             name: 'email',
             message: 'Enter email address (Required)',
