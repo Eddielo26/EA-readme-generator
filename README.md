@@ -10,6 +10,7 @@
 * [Video](#video)
 * [Installation](#installation)
 * [Contact](#contact)
+* [Usage](#usage)
 
 # Description 
 
@@ -24,8 +25,12 @@
 
 # Installation
 * Within the command line:
-    * run: <code>npm init</code>
-    * followed by: <code>npm install inquirer</code>
+   * run: <code>npm init</code>
+   * followed by: <code>npm install inquirer</code>
+
+# Usage
+   * Creating quality READ.md
+   * Apply READ.md to users repository
    
 
 # Contact
