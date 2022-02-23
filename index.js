@@ -3,9 +3,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // link to page of README is generated
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generatePage = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
+
 const questions = () => {
     return inquirer.prompt ([
         {   // provide project name
@@ -36,7 +37,7 @@ const questions = () => {
         },
         {   // provide install instructions
             type: 'input',
-            name: 'install',
+            name: 'installation',
             message: 'What are the steps required to install your project?',
             validate: projectInstall => {
                 if (projectInstall){
@@ -62,17 +63,18 @@ const questions = () => {
         },
         {   // provide what the user can contribute
             type: 'input',
-            name: 'contributors',
+            name: 'contribution',
             message: 'What does the user need to know about contributing to the repo.'
         },
         {   // what test should be ran
             type: 'input',
             name: 'test',
             message: 'What command should be ran to run test?',
-            default: 'npm test'
+            // default: 'npm test'
         },
         {   // provide a license 
             type: 'list',
+            name: 'license',
             message: 'What kind of license should your project have? (Required)',
             choices: ['MIT', 'GNU', 'ISC'],
             validate: licenseInfo => {
@@ -99,7 +101,7 @@ const questions = () => {
         },
         {   // provide user email for contact informartion
             type: 'input',
-            name: 'email',
+            name: 'contact',
             message: 'Enter email address (Required)',
             validate: userEmail => {
                 if (userEmail) {
