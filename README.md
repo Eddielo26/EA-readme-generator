@@ -31,6 +31,7 @@ https://user-images.githubusercontent.com/94813193/155438979-141dc0a5-5d73-4860-
 * Within the command line:
    * run: <code>npm init</code>
    * followed by: <code>npm install inquirer</code>
+   * run node: <code>node (filename).js</code>
 
 # Usage
    * Creating quality READ.md
