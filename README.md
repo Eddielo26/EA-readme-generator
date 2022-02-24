@@ -21,6 +21,10 @@
 # Video
 
 
+https://user-images.githubusercontent.com/94813193/155438979-141dc0a5-5d73-4860-ab70-9fdfcfe0151a.mp4
+
+<a href="https://drive.google.com/file/d/1xxUzKJDaw1e_v9r1owzvad2lAb_IYgKD/view?usp=sharing">Full Video</a>
+
 
 
 # Installation
