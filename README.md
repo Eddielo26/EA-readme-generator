@@ -1,8 +1,8 @@
 # Professional README Generator using Node
 
-![](https://img.shields.io/badge/Javascript-blue.svg)
+![](https://img.shields.io/badge/Javascript-yellow.svg)
 ![](https://img.shields.io/badge/inquirer-red.svg)
-![](https://img.shields.io/badge/JSON-yellow.svg)
+![](https://img.shields.io/badge/JSON-blue.svg)
 ![](https://img.shields.io/badge/node.js-green.svg)
 
 # Table of Contents
