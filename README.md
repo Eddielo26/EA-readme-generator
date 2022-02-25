@@ -1,10 +1,8 @@
-# as
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-
+# EA-Code-Quiz
+  ![badge](https://img.shields.io/badge/License-ISC-yellow.svg)
+  
   ## Description
-  as
+  Series of multiple choice questions to test the players knowledge of basic coding
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,20 +13,22 @@
   * [Contact](#contact)
 
   ## Installation
-  as
+  no need to install only click the deployed link or clone to local device to add to repository
 
   ## Usage
-  as
+  by clickin the deployed link the player can click their answers to see if they are correct in order to get a high score
 
   ## License
-  This project is lincensed under MIT
+  This project is lincensed under ISC
+  
+  
 
   ## Contribution
-  as
+  If they would like to add to better the game please just clone repository
 
   ## Test
-  as
+  functions with just clicking the deploy link
 
   ## Contact
-  If you have any questions about this project, please contact me at a. More projects available at https://github.com/as.
+  If you have any questions about this project, please contact me at eddarlostudy@yahoo.com<br> More projects available at https://github.com/eddielo26.
 

@@ -75,16 +75,9 @@ const questions = () => {
         {   // provide a license 
             type: 'list',
             name: 'license',
-            message: 'What kind of license should your project have? (Required)',
+            message: 'What kind of license should your project have?',
             choices: ['MIT', 'GNU', 'ISC'],
-            validate: licenseInfo => {
-                if (licenseInfo) {
-                    return true;
-                } else {
-                    console.log('Please choose a license!');
-                    return false;
-                }
-            }
+          
         },
         {   // provide github username
             type: 'input',
