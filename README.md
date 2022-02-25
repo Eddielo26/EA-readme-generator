@@ -28,7 +28,7 @@ Link to: <a href="https://drive.google.com/file/d/1oVhR1GWu5fZq1m4SimIuT8OQG0dHT
 
 ![](https://user-images.githubusercontent.com/94813193/155748428-f1b74ec7-6b18-429f-9c94-a73b75369a07.png)
 
-Sample README.md
+Sample Generated-README.md
 
 # Installation
 * Within the command line:
